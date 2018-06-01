@@ -1,13 +1,14 @@
-<!-- Main -->
-<div id="draft">
-	<!-- Post -->
-	<article class="shade-two">
-	  <div class="container">
-			<header>
-				<h2>{{- page.title -}}</h2>
-				<p>{% if page.author %}{{ page.author }}, {% endif %}{{- page.date | date_to_long_string -}}</p>
-			</header>
-	    {{- content -}}
-	  </div>
-	</article>
-</div>
+<!DOCTYPE HTML>
+<!--
+Prologue by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Jekyll integration by Chris Bobbe | chrisbobbe.github.io
+-->
+<html>
+	{%- include head.html -%}
+	<body>
+		{{- content -}}
+		{%- include footer.html -%}
+	</body>
+</html>
